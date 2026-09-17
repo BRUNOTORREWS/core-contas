@@ -1,0 +1,29 @@
+# Binários e saídas de build
+*.exe
+*.dll
+*.dcu
+*.dcp
+*.dcpil
+*.drc
+*.map
+*.obj
+*.rsm
+*.tds
+*.~*
+
+# Arquivos de configuração local do IDE / usuário
+*.identcache
+*.local
+*.tvsconfig
+*.dsk
+__history/
+__recovery/
+Win32/
+Win64/
+
+# CoreContas roda em PostgreSQL (servidor externo) — não há mais um
+# arquivo de banco local para ignorar, como o *.fdb do Firebird. Ainda
+# assim, nunca versione dumps nem backups locais de dados:
+*.sql.bak
+*.dump
+*.backup
