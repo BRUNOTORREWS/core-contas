@@ -129,4 +129,4 @@ apontados no Search Path. Expõe:
 
 - ✅ Schema, camada de modelo/repositório/serviço, testes DUnitX (7/7 passando) e aplicação desktop — funcionando de ponta a ponta.
 - 🚧 API REST (Horse) — código pronto, ainda não testada em execução.
-- 🚧 Emissão de boleto (ACBrBoleto) — código pronto, ainda não integrada a nenhum executável (depende da instalação do framework ACBr).
+- 🚧 Emissão de boleto (ACBrBoleto) — código pronto (`IEmissorBoleto`, `TEmissorBoletoACBr`, `TServicoCobranca`), mas não integrado a nenhum executável. O `master` atual do ACBr acoplou `ACBrBoleto` a uma cadeia de dependências bem mais pesada do que quando este código foi escrito (PIX, certificado digital/OpenSSL via `ACBrDFeSSL`, envio de e-mail), e a API do componente mudou (a unit `ACBrBoletoTitulo` referenciada aqui não existe mais na árvore atual do projeto) — integrar de verdade exigiria adaptar este código à API vigente do ACBr, não só instalar a biblioteca.
